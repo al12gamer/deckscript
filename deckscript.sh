@@ -15,7 +15,7 @@ flatpak update -y
 flatpak install codium boxes lutris pupgui2
 ## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck
 sudo pacman-key --init
-sudo pacman-key --refresh-keys
+sudo pacman-key --populate archlinux
 sudo pacman -Sy archlinux-keyring && pacman -Su
 echo '
 [multilib]
