@@ -4,11 +4,15 @@ echo ********************************
 echo ********************************
 echo "Now to install some things..." 
 ## First let's change that password
+echo ********************************
 echo "Please change your Deck admin password"
+echo ********************************
 passwd
 ## Install multilib stuff and disable readonly filesystem
-echo ****************************f****
+echo ********************************
 echo "Now we'll install and update terminal programs along with flatpak apps"
+echo ********************************
+sleep 2
 sudo steamos-readonly disable
 flatpak update --appstream
 flatpak update -y
@@ -19,15 +23,12 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo locale-gen
 sudo pacman -Sy archlinux-keyring && pacman -Su
-echo '
-[multilib]
-Include = /etc/pacman.d/mirrorlist' | sudo tee --append /etc/pacman.conf
 sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc
 ## oh yeah let's now add btop++ if we can
 wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-x86_64-linux-musl.tbz
 sudo tar xf btop.tbz -C /usr/local bin/btop
 ## install yay for an AUR helper, resolving header issues prior to install
 cd
-sudo pacman --noconfirm -S cmake pkg-config glibc
+sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ## should be done at this point, but might need furher tweaking
