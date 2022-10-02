@@ -10,4 +10,4 @@ bash deckscript.sh
 ```
 ## Programs Installed
 This Script will install the following programs:
-Boxes (flatpak), vim, neofetch, btop++ (from git), Lutris (flatpak), base development packages, Brave browser (flatpak), Protonup-Qt (flatpak), fastfetch
+yay, fastfetch, Boxes (flatpak), vim, neofetch, btop++ (from git), Lutris (flatpak), base development packages, Brave browser (flatpak), Protonup-Qt (flatpak)
