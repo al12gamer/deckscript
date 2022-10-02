@@ -1,5 +1,5 @@
 # Deck Script For Working via Steam Deck
-This script will install some dev programs and temporarily disable the read-only filesystem so that you can work with terminal development tools. Note that this script was made from Desktop Mode on my personal Steam Deck plugged into a NexDock Touch.
+This script will install some dev programs and temporarily disable the read-only filesystem so that you can work with terminal development tools. Note that this script was made from Desktop Mode on my personal Steam Deck plugged into a NexDock Touch. Alongside installed programs to make the deck favorable to a dev/work environment when docked, this script may evolve over time to become interactive for other functionality as well.
 
 ## Usage
 First, let's open up the Konsole from the Steam Deck application menu at the bottom left of Desktop mode. Then paste these commands to run the script:
