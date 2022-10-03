@@ -31,4 +31,6 @@ sudo tar xf btop.tbz -C /usr/local bin/btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-## should be done at this point, but might need furher tweaking
+## now let's grab fastfetch
+sudo pacman -Syu
+sudo pacman -S dconf glib2 zlib
