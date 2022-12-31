@@ -11,3 +11,4 @@ bash deckscript.sh
 ## Programs Installed
 This Script will install the following programs:
 yay, fastfetch, Boxes (flatpak), vim, neofetch, btop++ (from git), Lutris (flatpak), base development packages, Brave browser (flatpak), Protonup-Qt (flatpak)
+It is recommended to restart after the script finishes, then boot back into Desktop Mode and install [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader)
