@@ -12,7 +12,7 @@ passwd
 echo ********************************
 echo "Now we'll install and update terminal programs along with flatpak apps"
 echo ********************************
-sleep 2
+sleep 5
 sudo steamos-readonly disable
 flatpak update --appstream
 flatpak update -y
@@ -33,3 +33,5 @@ sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-heade
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ## should be done at this point, but might need furher tweaking
 sudo steamos-readonly enable
+sleep 2
+echo "good to go, let's reboot!"
