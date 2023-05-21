@@ -16,9 +16,9 @@ sleep 5
 sudo steamos-readonly disable
 flatpak update --appstream
 flatpak update -y
-flatpak install codium boxes lutris pupgui2
-flatpak install brave firefox
-## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck
+flatpak install -y codium boxes lutris pupgui2
+flatpak install -y brave firefox
+## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck running SteamOS 3.4.6
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo locale-gen
@@ -31,7 +31,10 @@ sudo tar xf btop.tbz -C /usr/local bin/btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-## should be done at this point, but might need furher tweaking
+## install git yuzu from aur
+yay -S yuzu-mainline-git
+## should be done at this point, but might need furher tweaking depending on what you want to install
+cd
 sudo steamos-readonly enable
 sleep 2
 echo "good to go, let's reboot!"
