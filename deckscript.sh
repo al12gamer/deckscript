@@ -29,7 +29,7 @@ sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-v
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -s btop-git
+yay -s --noconfirm btop-git
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 mkdir corescript
