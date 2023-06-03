@@ -16,8 +16,9 @@ sleep 5
 sudo steamos-readonly disable
 flatpak update --appstream
 flatpak update -y
-flatpak install -y codium boxes lutris pupgui2
-flatpak install -y brave firefox
+flatpak install -y codium boxes lutris pupgui2 brave firefox
+## also grab yuzu and dolphin
+flatpak install -y yuzu dolphin
 ## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck running SteamOS 3.4.6
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
@@ -31,8 +32,13 @@ sudo tar xf btop.tbz -C /usr/local bin/btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-## install git yuzu from aur
-yay -S yuzu-mainline-git
+## pull most recent Retroarch cores, if you have retroarch installed
+mkdir corescript
+cd corescript
+wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
+bash steamdeck-retroarch-download-all-cores.sh
+echo "If you had retroarch installed via Steam, all the cores are now updated"
+sleep 2
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sudo steamos-readonly enable
