@@ -11,4 +11,7 @@ bash deckscript.sh
 ```
 ## Programs Installed
 This Script will install the following programs:
-yay, fastfetch, Boxes (flatpak), vim, neofetch, btop++ (from git), Lutris (flatpak), base development packages, Brave browser (flatpak), Protonup-Qt (flatpak)
++ Package managers: yay
++ Flatpaks: Boxes, Brave, Protonup-QT, Codium, Lutris, Firefox, Dophin, Yuzu
++ Pacman Packages: vim, neofetch, btopp++ (from aur), base devel packages
++ Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), CryoUtilities
