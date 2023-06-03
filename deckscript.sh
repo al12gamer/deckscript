@@ -28,11 +28,13 @@ sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-v
 ## oh yeah let's now add btop++ if we can
 wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-x86_64-linux-musl.tbz
 sudo tar xf btop.tbz -C /usr/local bin/btop
-## install yay for an AUR helper, resolving header issues prior to install
+## install yay for an AUR helper, also grab btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+yay -s btop-git
 ## pull most recent Retroarch cores, if you have retroarch installed
+cd
 mkdir corescript
 cd corescript
 wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
@@ -42,11 +44,14 @@ sleep 2
 cd
 cd Desktop
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
+wget --content-disposition https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/decky_installer.desktop
+chmod +x InstallCryoUtilities.desktop
+chmod +x decky_installer.desktop
 cd
-echo "The most recent CryoUtilities installer will now be on your desktop. Install it after a reboot by double-clicking it"
-sleep 3
+echo "The most recent CryoUtilities installer and Decky Loader installer will now be on your desktop. Install them after a reboot by double-clicking them and running through the scripts one at a time"
+sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sudo steamos-readonly enable
 sleep 2
-echo "Good to go, let's reboot!"
+echo "Good to go, reboot when ready!"
