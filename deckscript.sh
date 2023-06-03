@@ -39,8 +39,14 @@ wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retr
 bash steamdeck-retroarch-download-all-cores.sh
 echo "If you had retroarch installed via Steam, all the cores are now updated"
 sleep 2
+cd
+cd Desktop
+wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
+cd
+echo "The most recent CryoUtilities installer will now be on your desktop. Install it after a reboot by double-clicking it"
+sleep 3
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sudo steamos-readonly enable
 sleep 2
-echo "good to go, let's reboot!"
+echo "Good to go, let's reboot!"
