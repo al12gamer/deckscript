@@ -14,5 +14,5 @@ Be sure to hit enter after pasting each line.
 This Script will install the following programs:
 + Package managers: yay
 + Flatpaks: Boxes, Brave, Protonup-QT, Codium, Lutris, Firefox, Dophin, Yuzu
-+ Pacman Packages: vim, neofetch, btopp++ (from aur), base devel packages
++ Pacman Packages: vim, neofetch, btopp++ (from aur), base devel packages, ansible, python3-pip 
 + Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam)
