@@ -25,9 +25,6 @@ sudo pacman-key --populate archlinux
 sudo locale-gen
 sudo pacman -Sy archlinux-keyring && pacman -Su
 sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc ansible python3-pip 
-## oh yeah let's now add btop++ if we can
-wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-x86_64-linux-musl.tbz
-sudo tar xf btop.tbz -C /usr/local bin/btop
 ## install yay for an AUR helper, also grab btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
