@@ -5,9 +5,9 @@ echo ********************************
 echo "Now to install some things..." 
 ## First let's change that password
 echo ********************************
-echo "Please change your Deck admin password"
+echo "Please change your Deck admin password if you haven't already, otherwise this won't work"
 echo ********************************
-passwd
+sleep 3
 ## Install multilib stuff and disable readonly filesystem
 echo ********************************
 echo "Now we'll install and update terminal programs along with flatpak apps"
