@@ -30,10 +30,11 @@ cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S --noconfirm btop-git
+## also install jotta-cli from aur to backup and sync certain things - for example I've added my Switch keys to the sync folder
+yay -S --noconfirm jotta-cli
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
-mkdir corescript
-cd corescript
+cd Desktop
 wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
 bash steamdeck-retroarch-download-all-cores.sh
 echo "If you had retroarch installed via Steam, all the cores are now updated"
