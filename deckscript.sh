@@ -24,25 +24,25 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo locale-gen
 sudo pacman -Sy archlinux-keyring && pacman -Su
-sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc
-## oh yeah let's now add btop++ if we can
-wget -qO btop.tbz https://github.com/aristocratos/btop/releases/latest/download/btop-x86_64-linux-musl.tbz
-sudo tar xf btop.tbz -C /usr/local bin/btop
+sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc ansible python3-pip 
 ## install yay for an AUR helper, also grab btop
 cd
-sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
+sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers ansible vim-ansible ansible-core
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -s btop-git
+yay -S --noconfirm btop-git
+## also install jotta-cli from aur to backup and sync certain things - for example I've added my Switch keys to the sync folder
+yay -S --noconfirm jotta-cli
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
-mkdir corescript
-cd corescript
+cd Desktop
 wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
 bash steamdeck-retroarch-download-all-cores.sh
 echo "If you had retroarch installed via Steam, all the cores are now updated"
 sleep 2
 cd
+## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
 cd Desktop
+git clone https://github.com/geerlingguy/pi-webcam.git
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
 wget --content-disposition https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/decky_installer.desktop
 chmod +x InstallCryoUtilities.desktop
