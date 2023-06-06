@@ -27,7 +27,7 @@ sudo pacman -Sy archlinux-keyring && pacman -Su
 sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc ansible python3-pip 
 ## install yay for an AUR helper, also grab btop
 cd
-sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers
+sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers ansible vim-ansible ansible-core
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S --noconfirm btop-git
 ## also install jotta-cli from aur to backup and sync certain things - for example I've added my Switch keys to the sync folder
