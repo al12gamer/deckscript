@@ -15,4 +15,4 @@ This Script will install the following programs:
 + Package managers: yay
 + Flatpaks: Boxes, Brave, Protonup-QT, Codium, Lutris, Firefox, Dophin, Yuzu
 + Pacman Packages: vim, neofetch, btop++ (from aur), base devel packages, ansible, ansible-core, vim-ansible, python3-pip, jotta-cli (from aur)
-+ Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam)
++ Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam) [Prerequisites for Playing Ship of Harkinian mod](https://github.com/al12gamer/deckscript/issues/12)
