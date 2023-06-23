@@ -16,7 +16,7 @@ sleep 5
 sudo steamos-readonly disable
 flatpak update --appstream
 flatpak update -y
-flatpak install -y codium boxes lutris pupgui2 brave firefox
+flatpak install -y codium boxes lutris pupgui2 brave firefox im.riot.Riot
 ## also grab yuzu and dolphin
 flatpak install -y yuzu dolphin
 ## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck running SteamOS 3.4.6
@@ -49,6 +49,8 @@ chmod +x InstallCryoUtilities.desktop
 chmod +x decky_installer.desktop
 cd
 echo "The most recent CryoUtilities installer and Decky Loader installer will now be on your desktop. Install them after a reboot by double-clicking them and running through the scripts one at a time"
+sleep 4
+echo "If you would like to download Ship of Harkinian, a comprehensive Ocarina of Time mod, run SoH.sh from the deckscript folder after a reboot."
 sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
