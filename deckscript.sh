@@ -41,8 +41,8 @@ echo "If you had retroarch installed via Steam, all the cores are now updated"
 sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
-cd Desktop
 git clone https://github.com/geerlingguy/pi-webcam.git
+cd Desktop
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
 wget --content-disposition https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/decky_installer.desktop
 chmod +x InstallCryoUtilities.desktop
