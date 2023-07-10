@@ -30,7 +30,7 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo locale-gen
 sudo pacman -Sy archlinux-keyring && pacman -Su
-sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader neofetch vim cmake glibc ansible python3-pip unzip
+sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader vim nix
 ## install yay for an AUR helper, also grab btop
 cd
 sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers ansible vim-ansible ansible-core
