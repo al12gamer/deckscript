@@ -2,7 +2,6 @@
 echo "HELLO! Welcome to the Script!"
 echo ********************************
 echo ********************************
-echo "Now to install some things..." 
 ## First let's change that password
 echo ********************************
 echo "Please change your Deck admin password if you haven't already, otherwise this won't work"
@@ -14,30 +13,17 @@ cd cpufreq
 wget https://github.com/TheRealAlexV/steamdeck-scripts/blob/main/functions/auto-cpufreq.sh
 bash auto-cpufreq.sh
 cd
-## Install multilib stuff and disable readonly filesystem
+## Install the previously pacman packages through Nix - install Nix package manager first
 echo ********************************
-echo "Now we'll install and update terminal programs along with flatpak apps"
+echo "Now we'll install the Nix package manager and grab some programs"
 echo ********************************
-sleep 5
-sudo steamos-readonly disable
+sleep 4
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixos.jotta-cli
+cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y codium boxes lutris pupgui2 brave firefox im.riot.Riot
-## also grab yuzu and dolphin
-flatpak install -y yuzu dolphin
-## pupgui2 is protonup-qt, also we may need to initialize pacman keys here as that helped on my deck running SteamOS 3.4.6
-sudo pacman-key --init
-sudo pacman-key --populate archlinux
-sudo locale-gen
-sudo pacman -Sy archlinux-keyring && pacman -Su
-sudo pacman --noconfirm -Syyu git go base-devel lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader vim nix
-## install yay for an AUR helper, also grab btop
-cd
-sudo pacman --noconfirm -S cmake pkg-config glibc gcc libarchive linux-api-headers ansible vim-ansible ansible-core
-git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -S --noconfirm btop-git
-## also install jotta-cli from aur to backup and sync certain things - for example I've added my Switch keys to the sync folder
-yay -S --noconfirm jotta-cli
+flatpak install -y pupgui2 yuzu dolphin
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
@@ -48,6 +34,7 @@ sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
 git clone https://github.com/geerlingguy/pi-webcam.git
+## Make sure the CryoUtilities and Decky installers are ready to go
 cd Desktop
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
 wget --content-disposition https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/decky_installer.desktop
@@ -60,6 +47,5 @@ echo "If you would like to download Ship of Harkinian, a comprehensive Ocarina o
 sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
-sudo steamos-readonly enable
 sleep 2
 echo "Good to go, reboot when ready!"
