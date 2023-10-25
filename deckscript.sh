@@ -4,7 +4,7 @@ echo ********************************
 echo ********************************
 ## First let's change that password
 echo ********************************
-echo "Please change your Deck admin password if you haven't already, otherwise this won't work"
+echo "Please change your Deck admin password if you haven't already, otherwise this may not work"
 echo ********************************
 sleep 3
 echo "Installing a cpu auto scheduler"
