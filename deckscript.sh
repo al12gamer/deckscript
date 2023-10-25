@@ -28,8 +28,8 @@ flatpak install -y pupgui2 yuzu dolphin
 cd
 cd Desktop
 wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
-bash steamdeck-retroarch-download-all-cores.sh
-echo "If you had retroarch installed via Steam, all the cores are now updated"
+chmod +x steamdeck-retroarch-download-all-cores.sh
+echo "If you had retroarch installed via Steam, feel free to run the download-all-cores file on your desktop in the future"
 sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
