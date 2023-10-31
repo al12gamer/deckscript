@@ -19,7 +19,7 @@ echo "Now we'll install the Nix package manager and grab some programs"
 echo ********************************
 sleep 4
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
-nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixos.jotta-cli
+nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli
 cd
 flatpak update --appstream
 flatpak update -y
@@ -43,7 +43,7 @@ chmod +x decky_installer.desktop
 cd
 echo "The most recent CryoUtilities installer and Decky Loader installer will now be on your desktop. Install them after a reboot by double-clicking them and running through the scripts one at a time"
 sleep 4
-echo "If you would like to download Ship of Harkinian, a comprehensive Ocarina of Time mod, run SoH.sh from the deckscript folder after a reboot."
+echo "If you would like to download Ship of Harkinian, a comprehensive Ocarina of Time mod, run SoH.sh from the deckscript folder after a reboot. It will open Firefox to their download page for their newest release."
 sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
