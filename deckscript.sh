@@ -45,6 +45,12 @@ echo "The most recent CryoUtilities installer and Decky Loader installer will no
 sleep 4
 echo "If you would like to download Ship of Harkinian, a comprehensive Ocarina of Time mod, run SoH.sh from the deckscript folder after a reboot. It will open Firefox to their download page for their newest release."
 sleep 4
+## emudeck
+cd
+cd Desktop
+wget https://www.emudeck.com/EmuDeck.desktop
+echo "EmuDeck's installer has been also downloaded to the desktop"
+sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sleep 2
