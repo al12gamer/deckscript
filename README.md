@@ -14,10 +14,9 @@ bash deckscript.sh
 Be sure to hit enter after pasting each line.
 ## Programs Installed
 This Script will install the following programs:
-+ Package managers: nix, pacman
-+ Flatpaks: Boxes, Brave, Protonup-QT, Codium, Lutris, Firefox, Dophin, Yuzu, Element messenger
-+ Nix Packages: 
-+ Pacman Packages: vim, neofetch, btop++ (from aur), base devel packages, ansible, ansible-core, vim-ansible, python3-pip, jotta-cli (from aur)
++ Package managers: nix, flatpak
++ Flatpaks: Protonup-QT, Lutris, Dolphin, Yuzu, 
++ Nix Packages: Boxes, Brave, Element messenger, Firefox, VSCodium, Gnome-Boxes, btop, Jotta-CLI backup utility
 + Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam), [Prerequisites for Playing Ship of Harkinian mod](https://github.com/al12gamer/deckscript/issues/12)
 ## Issues?
 If you have any problems with this script or any suggestions, feel free to [open an issue here](https://github.com/al12gamer/deckscript/issues)
