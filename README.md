@@ -1,5 +1,5 @@
 # Deck Script For Working via Steam Deck
-This script will install some dev programs and temporarily disable the read-only filesystem so that you can work with terminal development tools. Note that this script was made from Desktop Mode on my personal Steam Deck plugged into a NexDock Touch, and also docked to the official Steam Deck Dock.
+This script will install various Nix packages and flatpaks for the system, as well as enable a cpu scheduler that may improve battery life. Note that this script was made from Desktop Mode on my personal Steam Deck plugged into a NexDock Touch, and also docked to the official Steam Deck Dock.
 It is recommended to restart after the script finishes, then boot back into Desktop Mode and run any installers that the script mentioned that it put on your Desktop...if you're interested in those.
 
 This script now assumes you're running a version of SteamOS with the `/nix` directory included by default. This means SteamOS 3.5 or newer.
