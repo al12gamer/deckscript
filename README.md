@@ -2,7 +2,7 @@
 This script will install various Nix packages and flatpaks for the system, as well as enable a cpu scheduler that may improve battery life. Note that this script was made from Desktop Mode on my personal Steam Deck plugged into a NexDock Touch, and also docked to the official Steam Deck Dock.
 It is recommended to restart after the script finishes, then boot back into Desktop Mode and run any installers that the script mentioned that it put on your Desktop...if you're interested in those.
 
-This script now assumes you're running a version of SteamOS with the `/nix` directory included by default. This means SteamOS 3.5 or newer.
+This script now assumes you're running a version of SteamOS with the `/nix` directory included by default. This means SteamOS 3.5.5 or newer.
 
 ## Usage
 First, boot into Desktop Mode. Next, let's open up the Konsole from the Steam Deck application menu with the D symbol at the bottom left of Desktop mode's desktop. Then paste these commands one line at a time to run the script:
