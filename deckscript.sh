@@ -5,8 +5,9 @@ echo ********************************
 ## First let's change that password
 echo ********************************
 echo "Please change your Deck admin password if you haven't already, otherwise this may not work"
+echo "You can change the admin password by typing passwd and hitting enter in your Konsole terminal"
 echo ********************************
-sleep 3
+sleep 4
 echo "Installing a cpu auto scheduler"
 mkdir cpufreq
 cd cpufreq
@@ -18,6 +19,7 @@ echo ********************************
 echo "Now we'll install the Nix package manager and grab some programs"
 echo ********************************
 sleep 4
+sudo chown deck:deck /nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
 nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli
 cd
