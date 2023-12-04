@@ -21,11 +21,11 @@ echo ********************************
 sleep 4
 sudo chown deck:deck /nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
-nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli nixpkgs.fastfetch
+nix-env -iA nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli nixpkgs.fastfetch
 cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y pupgui2 yuzu dolphin com.github.zocker_160.SyncThingy
+flatpak install -y pupgui2 yuzu dolphin com.github.zocker_160.SyncThingy net.veloren.airshipper org.mozilla.firefox  
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
@@ -35,7 +35,7 @@ echo "If you had retroarch installed via Steam, feel free to run the download-al
 sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
-git clone https://github.com/geerlingguy/pi-webcam.git
+# git clone https://github.com/geerlingguy/pi-webcam.git
 ## Make sure the CryoUtilities and Decky installers are ready to go
 cd Desktop
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
