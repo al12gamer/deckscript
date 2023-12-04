@@ -25,7 +25,7 @@ nix-env -iA nixpkgs.firefox nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-b
 cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y pupgui2 yuzu dolphin com.github.zocker_160.SyncThingy
+flatpak install -y pupgui2 yuzu dolphin com.github.zocker_160.SyncThingy net.veloren.airshipper
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
