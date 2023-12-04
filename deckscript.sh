@@ -19,9 +19,11 @@ echo ********************************
 echo "Now we'll install the Nix package manager and grab some programs"
 echo ********************************
 sleep 4
+## chown nix directory so deck user can access it, then run single user nix installer
 sudo chown deck:deck /nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
-nix-env -iA nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli nixpkgs.fastfetch
+cd
+nix-env --install nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli nixpkgs.fastfetch
 cd
 flatpak update --appstream
 flatpak update -y
