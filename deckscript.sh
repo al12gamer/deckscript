@@ -35,7 +35,7 @@ echo "If you had retroarch installed via Steam, feel free to run the download-al
 sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
-git clone https://github.com/geerlingguy/pi-webcam.git
+# git clone https://github.com/geerlingguy/pi-webcam.git
 ## Make sure the CryoUtilities and Decky installers are ready to go
 cd Desktop
 wget --content-disposition https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/InstallCryoUtilities.desktop
