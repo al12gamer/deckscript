@@ -11,12 +11,23 @@ git clone https://github.com/al12gamer/deckscript.git
 cd deckscript
 bash deckscript.sh
 ```
+If you would like to grab the prerequisites to play the Ship of Harkinian upgrades to Ocarina of Time, run the following commands one line at a time:
+```
+cd deckscript
+bash SoH.sh
+```
+If you would like to play Battlefield 2142 on your Deck via the Lutris installer and want to make sure you get the proper files:
+```
+cd deckscript
+bash bf2142.sh
+lutris
+```
 Be sure to hit enter after pasting each line.
 ## Programs Installed
 This Script will install the following programs:
 + Package managers: Nix, Flatpak
-+ Flatpaks: Protonup-QT, Lutris, Dolphin, Yuzu, SyncThingy
-+ Nix Packages: fastfetch, Brave, Element messenger, Firefox, VSCodium, Gnome-Boxes, btop, Jotta-CLI backup utility
++ Flatpaks: Protonup-QT, Lutris, Dolphin, SyncThingy
++ Nix Packages: fastfetch, Brave, Element messenger, Firefox, VSCodium, btop
 + Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam), [Prerequisites for Playing Ship of Harkinian mod](https://github.com/al12gamer/deckscript/issues/12), [EmuDeck Installer](https://emudeck.github.io/)
 ## Issues?
 If you have any problems with this script or any suggestions, feel free to [open an issue here](https://github.com/al12gamer/deckscript/issues)
