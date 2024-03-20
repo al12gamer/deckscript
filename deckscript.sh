@@ -22,7 +22,7 @@ nix-env --install nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpk
 cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y pupgui2 suyu dolphin com.github.zocker_160.SyncThingy net.veloren.airshipper org.mozilla.firefox lutris
+flatpak install -y pupgui2 dolphin com.github.zocker_160.SyncThingy net.veloren.airshipper org.mozilla.firefox lutris
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
@@ -53,4 +53,6 @@ sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sleep 2
-echo "Good to go, reboot when ready!"
+echo "If you would like to install the Suyu continuation of the Yuzu Switch emulator, we'll open the site to that now, otherwise feel free to hit CTRL + C and reboot!"
+firefox https://suyu.dev/
+exit
