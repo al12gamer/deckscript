@@ -8,32 +8,27 @@ echo "Please change your Deck admin password if you haven't already, otherwise t
 echo "You can change the admin password by typing passwd and hitting enter in your Konsole terminal"
 echo ********************************
 sleep 4
-echo "Installing a cpu auto scheduler"
-mkdir cpufreq
-cd cpufreq
-wget https://github.com/TheRealAlexV/steamdeck-scripts/blob/main/functions/auto-cpufreq.sh
-bash auto-cpufreq.sh
 cd
 ## Install the previously pacman packages through Nix - install Nix package manager first
 echo ********************************
-echo "Now we'll install the Nix package manager and grab some programs"
+echo "Now we'll install the Nix package manager and grab some programs immutably"
 echo ********************************
 sleep 4
 ## chown nix directory so deck user can access it, then run single user nix installer
 sudo chown deck:deck /nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
 cd
-nix-env --install nixpkgs.brave nixpkgs.vscodium nixpkgs.gnome.gnome-boxes nixpkgs.btop nixpkgs.jotta-cli nixpkgs.fastfetch
+nix-env --install nixpkgs.brave nixpkgs.vscodium nixpkgs.btop nixpkgs.fastfetch
 cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y pupgui2 yuzu dolphin com.github.zocker_160.SyncThingy net.veloren.airshipper org.mozilla.firefox  
+flatpak install -y pupgui2 dolphin net.veloren.airshipper org.mozilla.firefox lutris
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
 wget https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh
 chmod +x steamdeck-retroarch-download-all-cores.sh
-echo "If you had retroarch installed via Steam, feel free to run the download-all-cores file on your desktop in the future"
+echo "If you had Retroarch installed via Steam, feel free to run the download-all-cores file on your desktop in the future"
 sleep 2
 cd
 ## git clone the pi webcam directory to desktop, for reference point when installing pi webcam stuff
@@ -58,4 +53,6 @@ sleep 4
 ## should be done at this point, but might need furher tweaking depending on what you want to install
 cd
 sleep 2
-echo "Good to go, reboot when ready!"
+echo "If you would like to install the Suyu continuation of the Yuzu Switch emulator, we'll open the site to that now, otherwise feel free to hit CTRL + C and reboot!"
+firefox https://suyu.dev/
+exit
