@@ -18,11 +18,11 @@ sleep 4
 sudo chown deck:deck /nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
 cd
-nix-env --install nixpkgs.brave nixpkgs.vscodium nixpkgs.btop nixpkgs.fastfetch
+nix-env --install nixpkgs.vscodium nixpkgs.btop nixpkgs.fastfetch nixpkgs.mc nixpkgs.fastfetch
 cd
 flatpak update --appstream
 flatpak update -y
-flatpak install -y pupgui2 dolphin net.veloren.airshipper org.mozilla.firefox lutris
+flatpak install -y pupgui2 dolphin net.veloren.airshipper org.mozilla.firefox lutris com.brave.Browser
 ## pull most recent Retroarch cores, if you have retroarch installed
 cd
 cd Desktop
