@@ -26,8 +26,8 @@ Be sure to hit enter after pasting each line. [This](https://lutris.net/games/in
 ## Programs Installed
 This Script will install the following programs:
 + Package managers: Nix, Flatpak
-+ Flatpaks: Protonup-QT, Lutris, Dolphin, SyncThingy
-+ Nix Packages: fastfetch, Brave, Element messenger, Firefox, VSCodium, btop, Midnight Commander
++ Flatpaks: Protonup-QT, Lutris, Dolphin, Brave Browser
++ Nix Packages: Fastfetch, Firefox, VSCodium, btop, Midnight Commander
 + Add-ons: [Retroarch Core Downloader](https://github.com/icculus/twisty-little-utilities/blob/main/steamdeck-retroarch-download-all-cores.sh), [CryoUtilities](https://github.com/CryoByte33/steam-deck-utilities), [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [Pi webcam scripts](https://github.com/geerlingguy/pi-webcam), [Prerequisites for Playing Ship of Harkinian mod](https://github.com/al12gamer/deckscript/issues/12), [EmuDeck Installer](https://emudeck.github.io/)
 ## Issues?
 If you have any problems with this script or any suggestions, feel free to [open an issue here](https://github.com/al12gamer/deckscript/issues)
