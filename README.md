@@ -22,7 +22,7 @@ cd deckscript
 bash bf2142.sh
 lutris
 ```
-Be sure to hit enter after pasting each line.
+Be sure to hit enter after pasting each line. [This](https://lutris.net/games/install/36381/view) is a link to the Lutris installer script if curious.
 ## Programs Installed
 This Script will install the following programs:
 + Package managers: Nix, Flatpak
